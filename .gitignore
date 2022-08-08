@@ -1,0 +1,16 @@
+
+examples/1D Function/saved_results/
+
+examples/1D Function/compare_lengthscales/
+
+examples/2D Surface/active_learning_simulation/
+
+examples/2D Surface/regret_min_simulation/
+
+examples/Hartmann6/compare_feedback_types/
+
+examples/Hartmann6/saved_results/
+
+examples/ThompsonSamplingVisualization/saved_results/
+
+examples/Hartmann3/saved_results/
