@@ -13,8 +13,7 @@ settings = setupLearning;
 alg = PBL(settings);
 
 %% Run experiment (with no plotting)
-alg.runExperiment(1,0,'export_yamls')
-scatter(1,1,1e10,'r','filled')
+% alg.runExperiment(1,0,'export_yamls')
 
 %% Run experiment (with plotting);
 alg.reset;
