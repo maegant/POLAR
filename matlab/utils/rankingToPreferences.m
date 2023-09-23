@@ -16,8 +16,11 @@ else
         
         
         if prefnoise == 0
+             % if the first action comes before in the list, prefer it
             if find(ranking == comparisonInds(i,1)) < find(ranking == comparisonInds(i,2))
                 pref_prob = 1;
+
+            % if the first action comes later in the list, prefer the other
             elseif find(ranking == comparisonInds(i,1)) > find(ranking == comparisonInds(i,2))
                 pref_prob = 0;
             end
