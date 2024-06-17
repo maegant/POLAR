@@ -46,16 +46,16 @@ settings.simulation.simulated_coac_noise = 0; % percent likelihood of incorrect 
 settings.simulation.simulated_ord_noise = 0; % percent likelihood of incorrect simulated ord labels
 
 % generate new objective function
-gen_new_obj = 0;
+gen_new_obj = 1; 
 switch gen_new_obj
     case true
-        [settings.simulation.objective_settings.allobjectives,...
-            settings.simulation.objective_settings.allactions] = generateObjective(settings);
+        [allobjectives,allactions] = generateObjective(settings);
+        save('example_objective.mat','allobjectives','allactions')
     otherwise
         load('example_objective.mat','allobjectives','allactions');
-        settings.simulation.objective_settings.allobjectives = allobjectives;
-        settings.simulation.objective_settings.allactions = allactions;
 end
+settings.simulation.objective_settings.allobjectives = allobjectives;
+settings.simulation.objective_settings.allactions = allactions;
 
 end
 

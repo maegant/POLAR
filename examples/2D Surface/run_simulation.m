@@ -20,9 +20,9 @@ alg = PBL(settings);
 
 %% Plot Learning Objective Plots
 f = plotting.plotObjectives(alg);
-print(f(1), fullfile('objective_plots','pref_opt.png'),'-dpng');
-print(f(2), fullfile('objective_plots','pref_char.png'),'-dpng');
-print(f(3), fullfile('objective_plots','true_util.png'),'-dpng');
+% print(f(1), fullfile('objective_plots','pref_opt.png'),'-dpng');
+% print(f(2), fullfile('objective_plots','pref_char.png'),'-dpng');
+% print(f(3), fullfile('objective_plots','true_util.png'),'-dpng');
 
 %% Run simulations (active learning)
 alg.reset; %comment out to continue learning after 15 iterations
